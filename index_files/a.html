@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sigma App - Responsive web app kit</title>
+    <!-- PACE-->
+    <link rel="stylesheet" type="text/css" href="a_data/pace-theme-flash.css">
+    <script type="text/javascript" src="a_data/pace.js"></script>
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="a_data/bootstrap.css">
+    <!-- Ionicons-->
+    <link rel="stylesheet" type="text/css" href="a_data/ionicons.css">
+    <!-- Malihu Scrollbar-->
+    <link rel="stylesheet" type="text/css" href="a_data/jquery.css">
+    <!-- Animo.js-->
+    <link rel="stylesheet" type="text/css" href="a_data/animate-animo.css">
+    <!-- Bootstrap Progressbar-->
+    <link rel="stylesheet" type="text/css" href="a_data/bootstrap-progressbar-3.css">
+    <!-- Toastr-->
+    <link rel="stylesheet" type="text/css" href="a_data/toastr.css">
+    <!-- SpinKit-->
+    <link rel="stylesheet" type="text/css" href="a_data/2-double-bounce.css">
+    <!-- Weather Icons-->
+    <link rel="stylesheet" type="text/css" href="a_data/weather-icons-wind.css">
+    <link rel="stylesheet" type="text/css" href="a_data/weather-icons.css">
+    <!-- Bootstrap Date Range Picker-->
+    <link rel="stylesheet" type="text/css" href="a_data/daterangepicker.css">
+    <!-- Core CSS-->
+    <link rel="stylesheet" type="text/css" href="a_data/first-layout.css">
+  </head>
+  <body class="  pace-done"><div class="pace  pace-inactive"><div data-progress="99" data-progress-text="100%" style="transform: translate3d(100%, 0px, 0px);" class="pace-progress">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+    <!-- Header start-->
+    <header>
+      <div class="search-bar closed">
+        <form>
+          <div class="input-group input-group-lg">
+            <input placeholder="Search for..." class="form-control" type="text"><span class="input-group-btn">
+              <button type="button" class="btn btn-default search-bar-toggle"><i class="ion-close-round"></i></button></span>
+          </div>
+        </form>
+      </div><a href="javascript:;" role="button" class="hamburger-menu pull-left"><span></span></a>
+      <form class="search-form m-10 pull-left hidden-xs">
+        <div class="form-group has-feedback mb-0">
+          <input aria-describedby="inputSearchFor" placeholder="Search for..." style="width: 180px" class="form-control rounded" type="text"><span aria-hidden="true" class="ion-search form-control-feedback"></span><span id="inputSearchFor" class="sr-only">(default)</span>
+        </div>
+      </form><a href="http://lethemes.net/sigma/1.0/index.html" class="brand"></a>
+      <ul class="notification-bar list-inline pull-right">
+        <li class="visible-xs"><a href="javascript:;" role="button" class="header-icon search-bar-toggle"><i class="ion-search"></i></a></li>
+        <li class="visible-lg"><a href="javascript:;" role="button" class="header-icon sidebar-control"><i class="ion-pin"></i></a></li>
+        <li class="dropdown"><a id="dropdownMenu0" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle bubble header-icon"><i class="ion-code-working"></i><span class="badge bg-danger">4</span></a>
+          <div style="animation-duration: 0.2s; animation-delay: 0s; animation-timing-function: linear; animation-iteration-count: 1;" aria-labelledby="dropdownMenu0" class="dropdown-menu dropdown-menu-right dm-small fadeInUp animated">
+            <ul style="position: relative; overflow: visible;" data-mcs-theme="minimal-dark" class="media-list mCustomScrollbar _mCS_1 mCS-autoHide mCS_no_scrollbar"><div tabindex="0" style="max-height: 0px;" id="mCSB_1" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside"><div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
+              <li class="media"><a href="javascript:;">
+                  <div class="block clearfix mb-10"><span class="pull-left">HTML5</span><span class="pull-right label label-outline label-primary">65% Complete</span></div>
+                  <div class="progress progress-xs mb-0">
+                    <div aria-valuenow="65" style="width: 65%;" role="progressbar" data-transitiongoal="65" class="progress-bar"></div>
+                  </div></a></li>
+              <li class="media"><a href="javascript:;">
+                  <div class="block clearfix mb-10"><span class="pull-left">CSS3</span><span class="pull-right label label-outline label-success">80% Complete</span></div>
+                  <div class="progress progress-xs mb-0">
+                    <div aria-valuenow="80" style="width: 80%;" role="progressbar" data-transitiongoal="80" class="progress-bar progress-bar-success"></div>
+                  </div></a></li>
+              <li class="media"><a href="javascript:;">
+                  <div class="block clearfix mb-10"><span class="pull-left">PHP</span><span class="pull-right label label-outline label-danger">20% Complete</span></div>
+                  <div class="progress progress-xs mb-0">
+                    <div aria-valuenow="20" style="width: 20%;" role="progressbar" data-transitiongoal="20" class="progress-bar progress-bar-danger"></div>
+                  </div></a></li>
+              <li class="media"><a href="javascript:;">
+                  <div class="block clearfix mb-10"><span class="pull-left">Javascript</span><span class="pull-right label label-outline label-purple">45% Complete</span></div>
+                  <div class="progress progress-xs mb-0">
+                    <div aria-valuenow="45" style="width: 45%;" role="progressbar" data-transitiongoal="45" class="progress-bar progress-bar-purple"></div>
+                  </div></a></li>
+            </div></div><div style="display: none;" id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; top: 0px;" oncontextmenu="return false;"><div style="line-height: 50px;" class="mCSB_dragger_bar"></div></div><div class="mCSB_draggerRail"></div></div></div></ul>
+          </div>
+        </li>
+        <li class="dropdown"><a id="dropdownMenu1" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle bubble header-icon"><i class="ion-alert"></i><span class="badge bg-danger">6</span></a>
+          <div style="animation-duration: 0.2s; animation-delay: 0s; animation-timing-function: linear; animation-iteration-count: 1;" aria-labelledby="dropdownMenu1" class="dropdown-menu dropdown-menu-right dm-medium fadeInUp animated">
+            <h5 class="dropdown-header">You have 6 notifications</h5>
+            <ul style="position: relative; overflow: visible;" data-mcs-theme="minimal-dark" class="media-list mCustomScrollbar _mCS_2 mCS-autoHide mCS_no_scrollbar"><div tabindex="0" style="max-height: 0px;" id="mCSB_2" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside"><div id="mCSB_2_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
+              <li class="media"><a href="javascript:;">
+                  <div class="media-left"><i class="ion-chatbubbles media-object mo-md img-circle bg-primary text-center"></i></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Brittany Curtis</h5>
+                    <p class="text-muted mb-0">Commented on your post</p>
+                  </div>
+                  <div class="media-right text-nowrap">
+                    <time datetime="2016-12-10T20:27:48+07:00" class="fs-13 text-muted">5 mins</time>
+                  </div></a></li>
+              <li class="media"><a href="javascript:;">
+                  <div class="media-left avatar"><img src="a_data/11.jpg" alt="" class="media-object img-circle mCS_img_loaded"><span class="status bg-danger"></span></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Judy Fowler</h5>
+                    <p class="text-muted mb-0">Sent you a new email</p>
+                  </div>
+                  <div class="media-right text-nowrap">
+                    <time datetime="2016-12-10T20:42:40+07:00" class="fs-13 text-muted">12 mins</time>
+                  </div></a></li>
+              <li class="media"><a href="javascript:;">
+                  <div class="media-left"><span class="media-object mo-md img-circle bg-success text-center fw-700">S</span></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Sean Jenkins</h5>
+                    <p class="text-muted mb-0">Sent you a new message</p>
+                  </div>
+                  <div class="media-right text-nowrap">
+                    <time datetime="2016-12-10T20:50:48+07:00" class="fs-13 text-muted">8 hours</time>
+                  </div></a></li>
+              <li class="media"><a href="javascript:;">
+                  <div class="media-left avatar"><img src="a_data/05.jpg" alt="" class="media-object img-circle mCS_img_loaded"><span class="status bg-success"></span></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Johnny Dean</h5>
+                    <p class="text-muted mb-0">You have 8 unread messages</p>
+                  </div>
+                  <div class="media-right text-nowrap">
+                    <time datetime="2016-12-10T20:35:35+07:00" class="fs-13 text-muted">20 Oct</time>
+                  </div></a></li>
+              <li class="media"><a href="javascript:;">
+                  <div class="media-left"><i class="ion-person media-object mo-md img-circle bg-purple text-center"></i></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Jean Lawrence</h5>
+                    <p class="text-muted mb-0">Sent you a new email</p>
+                  </div>
+                  <div class="media-right text-nowrap">
+                    <time datetime="2016-12-10T20:42:40+07:00" class="fs-13 text-muted">20 Oct</time>
+                  </div></a></li>
+              <li class="media"><a href="javascript:;">
+                  <div class="media-left avatar"><img src="a_data/13.jpg" alt="" class="media-object img-circle mCS_img_loaded"><span class="status bg-warning"></span></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Karen Reed</h5>
+                    <p class="text-muted mb-0">Commented on your post</p>
+                  </div>
+                  <div class="media-right text-nowrap">
+                    <time datetime="2016-12-10T20:27:48+07:00" class="fs-13 text-muted">20 Oct</time>
+                  </div></a></li>
+            </div></div><div style="display: none;" id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical"><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; top: 0px;" oncontextmenu="return false;"><div style="line-height: 50px;" class="mCSB_dragger_bar"></div></div><div class="mCSB_draggerRail"></div></div></div></ul>
+            <div class="dropdown-footer"><a href="javascript:;" class="text-muted">View all notifications</a></div>
+          </div>
+        </li>
+        <li class="dropdown hidden-sm hidden-xs"><a id="dropdownMenu2" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle header-icon lh-1 pt-10 pb-10">
+            <div class="media mt-0">
+              <div class="media-left avatar"><img src="a_data/04.jpg" alt="" class="media-object img-circle"><span class="status bg-success"></span></div>
+              <div class="media-right media-middle pl-0">
+                <p class="fs-12 mb-0">Hi, Vishnu</p>
+              </div>
+            </div></a>
+          <ul style="animation-duration: 0.2s; animation-delay: 0s; animation-timing-function: linear; animation-iteration-count: 1;" aria-labelledby="dropdownMenu2" class="dropdown-menu dropdown-menu-right fadeInUp icon animated">
+            <li><a href="http://lethemes.net/sigma/1.0/profile.html"><i class="ion-person mr-5"></i> My Profile</a></li>
+            <li><a href="http://lethemes.net/sigma/1.0/email-inbox.html"><i class="ion-filing mr-5"></i> Inbox</a></li>
+            <li><a href="http://lethemes.net/sigma/1.0/profile.html"><i class="ion-gear-b mr-5"></i> Account Settings</a></li>
+            <li><a href="http://lethemes.net/sigma/1.0/login.html"><i class="ion-unlocked mr-5"></i> Logout</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript:;" role="button" class="right-sidebar-toggle bubble header-icon"><i class="ion-arrow-return-right"></i><span class="badge bg-danger">5</span></a></li>
+      </ul>
+    </header>
+    <!-- Header end-->
+    <div class="main-container">
+      <!-- Main Sidebar start-->
+      <aside style="overflow: visible;" data-mcs-theme="minimal-dark" class="main-sidebar mCustomScrollbar _mCS_3 mCS-autoHide"><div tabindex="0" style="max-height: none;" id="mCSB_3" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside"><div id="mCSB_3_container" class="mCSB_container" style="position: relative; top: 0px; left: 0px;" dir="ltr">
+        <div class="media user">
+          <div class="media-left">
+            <div id="esp-user-profile" data-percent="66" style="height: 56px; width: 56px; line-height: 40px; padding: 8px;" class="easy-pie-chart"><img src="a_data/04.jpg" alt="" class="avatar img-circle mCS_img_loaded"><canvas width="56" height="56"></canvas></div>
+          </div>
+          <div style="overflow: visible" class="media-body media-middle">
+            <h4 class="media-heading fs-16">Vishnu N S</h4>
+            <div class="dropdown"><a id="dropdown-status" href="javascript:;" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" class="dropdown-toggle"><span class="status bg-success"></span> Online <span class="caret"></span></a>
+              <ul style="animation-duration: 0.2s; animation-delay: 0s; animation-timing-function: linear; animation-iteration-count: 1;" aria-labelledby="dropdown-status" class="dropdown-menu fadeInUp animated">
+                <li><a href="#">Offline</a></li>
+                <li><a href="#">Busy</a></li>
+                <li><a href="#">Away</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="http://lethemes.net/sigma/1.0/login.html">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <ul class="list-unstyled navigation mb-0">
+          <li class="sidebar-category">Main</li>
+          <li class="panel"><a role="button" data-toggle="collapse" data-parent=".navigation" href="#collapse1" aria-expanded="false" aria-controls="collapse1" class="active collapsed"><i class="ion-ios-home-outline bg-purple"></i><span class="sidebar-title">Dashboard</span><span class="badge bg-danger">2</span></a>
+            <ul id="collapse1" class="list-unstyled collapse">
+              <li><a href="http://lethemes.net/sigma/1.0/index.html" class="active">Dashboard v1</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/index-v2.html">Dashboard v2</a></li>
+            </ul>
+          </li>
+          <li class="panel"><a href="http://lethemes.net/sigma/1.0/profile.html"><i class="ion-ios-person-outline bg-success"></i><span class="sidebar-title">Profile</span></a></li>
+          <li class="panel"><a href="http://lethemes.net/sigma/1.0/chat-dashboard.html"><i class="ion-ios-chatbubble-outline bg-primary"></i><span class="sidebar-title">Split your bills</span></a></li>
+          <li class="panel"><a href="http://lethemes.net/sigma/1.0/calendar.html"><i class="ion-ios-calendar-outline bg-info"></i><span class="sidebar-title">Calendar</span></a></li>
+          <li class="panel"><a role="button" data-toggle="collapse" data-parent=".navigation" href="#collapse2" aria-expanded="false" aria-controls="collapse2" class="collapsed"><i class="ion-ios-printer-outline bg-danger"></i><span class="sidebar-title">Email</span></a>
+            <ul id="collapse2" class="list-unstyled collapse">
+              <li><a href="http://lethemes.net/sigma/1.0/email-inbox.html">Inbox</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/email-read.html">Read email</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/email-compose.html">Compose email</a></li>
+            </ul>
+          </li>
+          <li class="panel"><a href="http://lethemes.net/sigma/1.0/widgets.html"><i class="ion-ios-albums-outline bg-warning"></i><span class="sidebar-title">Widgets</span></a></li>
+          <li class="sidebar-category">Menu Levels</li>
+          <li class="panel"><a role="button" data-toggle="collapse" data-parent=".navigation" href="#collapse20" aria-expanded="false" aria-controls="collapse20" class="collapsed"><i class="ion-ios-folder-outline bg-black"></i><span class="sidebar-title">Menu levels</span></a>
+            <ul id="collapse20" class="list-unstyled collapse">
+              <li><a role="button" data-toggle="collapse" data-parent="#collapse20" href="#collapse201" aria-expanded="false" aria-controls="collapse201" class="collapsed">Menu level 2.1</a>
+                <ul id="collapse201" class="list-unstyled collapse">
+                  <li><a href="#">Menu level 3.1</a></li>
+                  <li><a href="#">Menu level 3.2</a></li>
+                  <li><a href="#">Menu level 3.3</a></li>
+                </ul>
+              </li>
+              <li><a role="button" data-toggle="collapse" data-parent="#collapse20" href="#collapse202" aria-expanded="false" aria-controls="collapse202" class="collapsed">Menu level 2.2</a>
+                <ul id="collapse202" class="list-unstyled collapse">
+                  <li><a href="#">Menu level 3.4</a></li>
+                  <li><a role="button" data-toggle="collapse" data-parent="#collapse202" href="#collapse302" aria-expanded="false" aria-controls="collapse302" class="collapsed">Menu level 3.5</a>
+                    <ul id="collapse302" class="list-unstyled collapse">
+                      <li><a href="#">Menu level 4.1</a></li>
+                      <li><a role="button" data-toggle="collapse" data-parent="#collapse302" href="#collapse402" aria-expanded="false" aria-controls="collapse402" class="collapsed">Menu level 4.2</a>
+                        <ul id="collapse402" class="list-unstyled collapse">
+                          <li><a href="#">Menu level 5.1</a></li>
+                          <li><a href="#">Menu level 5.2</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Menu level 3.6</a></li>
+                </ul>
+              </li>
+              <li><a role="button" data-toggle="collapse" data-parent="#collapse20" href="#collapse203" aria-expanded="false" aria-controls="collapse203" class="collapsed">Menu level 2.3</a>
+                <ul id="collapse203" class="list-unstyled collapse">
+                  <li><a href="#">Menu level 3.7</a></li>
+                  <li><a href="#">Menu level 3.8</a></li>
+                  <li><a href="#">Menu level 3.9</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="sidebar-category">Components</li>
+          <li class="panel"><a role="button" data-toggle="collapse" data-parent=".navigation" href="#collapse6" aria-expanded="false" aria-controls="collapse6" class="collapsed"><i class="ion-ios-list-outline bg-black"></i><span class="sidebar-title">UI Elements</span></a>
+            <ul id="collapse6" class="list-unstyled collapse">
+              <li><a href="http://lethemes.net/sigma/1.0/animations.html">Animations</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/buttons.html">Buttons</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/carousels.html">Carousels</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/containers.html">Containers</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/dialogs.html">Dialogs</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/indicators.html">Indicators</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/navigations.html">Navigations</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/progress-bars.html">Progress bars</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/typography.html">Typography</a></li>
+            </ul>
+          </li>
+          <li class="panel"><a role="button" data-toggle="collapse" data-parent=".navigation" href="#collapse9" aria-expanded="false" aria-controls="collapse9" class="collapsed"><i class="ion-ios-photos-outline bg-black"></i><span class="sidebar-title">Forms</span></a>
+            <ul id="collapse9" class="list-unstyled collapse">
+              <li><a href="http://lethemes.net/sigma/1.0/forms-layouts.html">Form layouts</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/basic-forms.html">Basic forms</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/advanced-elements.html">Advanced elements</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/forms-validation.html">Forms validation</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/forms-wizard.html">Form wizard</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/file-uploads.html">File uploads</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/image-cropper.html">Image cropper</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/text-editors.html">Text editors</a></li>
+            </ul>
+          </li>
+          <li class="panel"><a role="button" data-toggle="collapse" data-parent=".navigation" href="#collapse10" aria-expanded="false" aria-controls="collapse10" class="collapsed"><i class="ion-ios-ionic-outline bg-black"></i><span class="sidebar-title">Icons</span></a>
+            <ul id="collapse10" class="list-unstyled collapse">
+              <li><a href="http://lethemes.net/sigma/1.0/glyphicons.html">Glyphicons</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/font-awesome.html">Font awesome</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/material-design.html">Material design</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/themify.html">Themify</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/weather-icons.html">Weather</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/flag-icons.html">Flag</a></li>
+            </ul>
+          </li>
+          <li class="panel"><a role="button" data-toggle="collapse" data-parent=".navigation" href="#collapse11" aria-expanded="false" aria-controls="collapse11" class="collapsed"><i class="ion-ios-browsers-outline bg-black"></i><span class="sidebar-title">Tables</span></a>
+            <ul id="collapse11" class="list-unstyled collapse">
+              <li><a href="http://lethemes.net/sigma/1.0/basic-tables.html">Basic tables</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/data-tables.html">Data tables</a></li>
+            </ul>
+          </li>
+          <li class="panel"><a role="button" data-toggle="collapse" data-parent=".navigation" href="#collapse12" aria-expanded="false" aria-controls="collapse12" class="collapsed"><i class="ion-ios-pie-outline bg-black"></i><span class="sidebar-title">Charts</span></a>
+            <ul id="collapse12" class="list-unstyled collapse">
+              <li><a href="http://lethemes.net/sigma/1.0/flot-charts.html">Flot charts</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/morris-charts.html">Morris charts</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/chart-js.html">Chart.js</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/chartist.html">Chartist</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/other-charts.html">Other charts</a></li>
+            </ul>
+          </li>
+          <li class="panel"><a role="button" data-toggle="collapse" data-parent=".navigation" href="#collapse13" aria-expanded="false" aria-controls="collapse13" class="collapsed"><i class="ion-ios-analytics-outline bg-black"></i><span class="sidebar-title">Maps</span></a>
+            <ul id="collapse13" class="list-unstyled collapse">
+              <li><a href="http://lethemes.net/sigma/1.0/vector-maps.html">Vector maps</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/google-maps.html">Google maps</a></li>
+            </ul>
+          </li>
+          <li class="sidebar-category">Page kits</li>
+          <li class="panel"><a role="button" data-toggle="collapse" data-parent=".navigation" href="#collapse14" aria-expanded="false" aria-controls="collapse14" class="collapsed"><i class="ion-ios-medkit-outline bg-black"></i><span class="sidebar-title">Error pages</span></a>
+            <ul id="collapse14" class="list-unstyled collapse">
+              <li><a href="http://lethemes.net/sigma/1.0/error-400.html">Error 400</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/error-401.html">Error 401</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/error-403.html">Error 403</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/error-404.html">Error 404</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/error-500.html">Error 500</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/error-503.html">Error 503</a></li>
+            </ul>
+          </li>
+          <li class="panel"><a role="button" data-toggle="collapse" data-parent=".navigation" href="#collapse15" aria-expanded="false" aria-controls="collapse15" class="collapsed"><i class="ion-ios-browsers-outline bg-black"></i><span class="sidebar-title">User pages</span></a>
+            <ul id="collapse15" class="list-unstyled collapse">
+              <li><a href="http://lethemes.net/sigma/1.0/login.html">Login</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/register.html">Register</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/forgot-password.html">Forgot password</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/lock-screen.html">Lock screen</a></li>
+              <li><a href="http://lethemes.net/sigma/1.0/profile.html">Profile</a></li>
+            </ul>
+          </li>
+          <li class="sidebar-category">Help</li>
+          <li class="panel"><a href="http://lethemes.net/sigma/1.0/documentation.html"><i class="ion-ios-help-outline bg-black"></i><span class="sidebar-title">Documentation</span></a></li>
+        </ul>
+        <div class="sidebar-category">Downloads</div>
+        <div class="sidebar-widget">
+          <ul class="list-unstyled pl-15 pr-15">
+            <li class="mb-20">
+              <div class="block clearfix mb-10"><span class="pull-left text-muted">image_01.jpg</span><span class="pull-right label label-outline label-success">48 sec</span></div>
+              <div class="progress progress-xs mb-0">
+                <div aria-valuenow="45" style="width: 45%;" role="progressbar" data-transitiongoal="45" class="progress-bar progress-bar-success"></div>
+              </div>
+            </li>
+            <li class="mb-20">
+              <div class="block clearfix mb-10"><span class="pull-left text-muted">image_02.jpg</span><span class="pull-right label label-outline label-purple">22 sec</span></div>
+              <div class="progress progress-xs mb-0">
+                <div aria-valuenow="58" style="width: 58%;" role="progressbar" data-transitiongoal="58" class="progress-bar progress-bar-purple"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div></div><div style="display: block;" id="mCSB_3_scrollbar_vertical" class="mCSB_scrollTools mCSB_3_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical"><div class="mCSB_draggerContainer"><div id="mCSB_3_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 244px; max-height: 524px; top: 0px;" oncontextmenu="return false;"><div style="line-height: 50px;" class="mCSB_dragger_bar"></div></div><div class="mCSB_draggerRail"></div></div></div></aside>
+      <!-- Main Sidebar end-->
+      <div class="page-container">
+        <div class="page-content container-fluid">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="widget">
+                <div class="widget-body">
+                  <div class="media">
+                    <div class="media-body"><span class="fs-12 text-muted text-uppercase">EXPENDITURE</span><span class="text-danger"><i class="ion-arrow-down-c"></i></span>
+                      <div class="fs-36 fw-300 counter">rs : 1,650</div>
+                    </div>
+                    <div class="media-right"><i class="ion-ios-list-outline fs-36"></i></div>
+                  </div>
+                </div>
+                <div id="flot-order" style="height: 50px; margin-top: -30px; padding: 0px; position: relative;"><canvas height="50" width="235" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 235px; height: 50px;" class="flot-base"></canvas><canvas height="50" width="235" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 235px; height: 50px;" class="flot-overlay"></canvas></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="widget">
+                <div class="widget-body">
+                  <div class="media">
+                    <div class="media-body"><span class="fs-12 text-muted text-uppercase">INCOME</span><span class="text-success"><i class="ion-arrow-up-c"></i></span>
+                      <div class="fs-36 fw-300"><span class="counter">rs : 2,032</span></div>
+                    </div>
+                    <div class="media-right"><i class="ion-ios-pulse fs-36"></i></div>
+                  </div>
+                </div>
+                <div id="flot-revenue" style="height: 50px; margin-top: -30px; padding: 0px; position: relative;"><canvas height="50" width="235" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 235px; height: 50px;" class="flot-base"></canvas><canvas height="50" width="235" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 235px; height: 50px;" class="flot-overlay"></canvas></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="widget">
+                <div class="widget-body">
+                  <div class="media">
+                    <div class="media-body"><span class="fs-12 text-muted text-uppercase">YOUR FRIENDS SPENT</span><span class="text-danger"><i class="ion-arrow-down-c"></i></span>
+                      <div class="fs-36 fw-300 counter">rs : 1,860</div>
+                    </div>
+                    <div class="media-right"><i class="ion-ios-person-outline fs-36"></i></div>
+                  </div>
+                </div>
+                <div id="flot-user" style="height: 50px; margin-top: -30px; padding: 0px; position: relative;"><canvas height="50" width="235" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 235px; height: 50px;" class="flot-base"></canvas><canvas height="50" width="235" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 235px; height: 50px;" class="flot-overlay"></canvas></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="widget">
+                <div class="widget-body">
+                  <div class="media">
+                    <div class="media-body"><span class="fs-12 text-muted text-uppercase">YOU OWE</span><span class="text-success"><i class="ion-arrow-up-c"></i></span>
+                      <div class="fs-36 fw-300 counter">rs : 0,210</div>
+                    </div>
+                    <div class="media-right"><i class="ion-ios-compose-outline fs-36"></i></div>
+                  </div>
+                </div>
+                <div id="flot-feedback" style="height: 50px; margin-top: -30px; padding: 0px; position: relative;"><canvas height="50" width="235" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 235px; height: 50px;" class="flot-base"></canvas><canvas height="50" width="235" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 235px; height: 50px;" class="flot-overlay"></canvas></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="widget text-center">
+                <div class="widget-heading">
+                  <h3 class="widget-title">KOCHI</h3>
+                </div>
+                <div class="widget-body">
+                  <p>TUESDAY, 17 JANUARY 2017</p>
+                  <div class="fs-36 fw-300">76<sup>o</sup></div>
+                  <hr>
+                  <div class="row row-0 expand">
+                    <div class="col-xs-3">
+                      <p class="fs-12 text-uppercase text-muted">Tue</p><i class="block fs-18 wi wi-day-fog"></i>
+                      <div class="mt-10 fs-11 text-muted">87<sup>o</sup></div>
+                    </div>
+                    <div class="col-xs-3">
+                      <p class="fs-12 text-uppercase text-muted">Wed</p><i class="block fs-18 wi wi-day-snow-wind"></i>
+                      <div class="mt-10 fs-11 text-muted">85<sup>o</sup></div>
+                    </div>
+                    <div class="col-xs-3">
+                      <p class="fs-12 text-uppercase text-muted">Thu</p><i class="block fs-18 wi wi-day-sprinkle"></i>
+                      <div class="mt-10 fs-11 text-muted">90<sup>o</sup></div>
+                    </div>
+                    <div class="col-xs-3">
+                      <p class="fs-12 text-uppercase text-muted">Fri</p><i class="block fs-18 wi wi-day-lightning"></i>
+                      <div class="mt-10 fs-11 text-muted">86<sup>o</sup></div>
+                    </div>
+                  </div>
+                  <div id="flot-weather" style="height: 105px; padding: 0px; position: relative;"><canvas height="105" width="281" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 281px; height: 105px;" class="flot-base"></canvas><canvas height="105" width="281" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 281px; height: 105px;" class="flot-overlay"></canvas></div>
+                  <div class="row row-0 expand">
+                    <div class="col-xs-3">
+                      <div class="fs-11 text-muted">69<sup>o</sup></div>
+                    </div>
+                    <div class="col-xs-3">
+                      <div class="fs-11 text-muted">71<sup>o</sup></div>
+                    </div>
+                    <div class="col-xs-3">
+                      <div class="fs-11 text-muted">75<sup>o</sup></div>
+                    </div>
+                    <div class="col-xs-3">
+                      <div class="fs-11 text-muted">70<sup>o</sup></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="widget">
+                <div class="widget-heading clearfix">
+                  <h3 class="widget-title pull-left">TRACK OF YOUR EXPENDITURES</h3>
+                  <ul class="widget-tools pull-right list-inline">
+                    <li><a href="javascript:;" class="widget-collapse"><i class="ion-chevron-up"></i></a></li>
+                    <li><a href="javascript:;" class="widget-reload"><i class="ion-refresh"></i></a></li>
+                    <li><a href="javascript:;" class="widget-remove"><i class="ion-close-round"></i></a></li>
+                  </ul>
+                </div>
+                <div class="widget-body">
+                  <div class="table-responsive">
+                    <table class="table mb-0">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Project Name</th>
+                          <th class="text-center">Start Date</th>
+                          <th class="text-center">Inspected</th>
+                          <th class="text-center">Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Sigma App v1.0</td>
+                          <td class="text-center">20 Aug 2016</td>
+                          <td class="text-center text-success"><i class="ion-checkmark-round"></i></td>
+                          <td class="text-center"><span class="label label-outline label-success">Released</span></td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Foundation App v1.0</td>
+                          <td class="text-center">15 Oct 2016</td>
+                          <td class="text-center text-danger"><i class="ion-close-round"></i></td>
+                          <td class="text-center"><span class="label label-outline label-purple">Work in Progress</span></td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Delta App v1.0</td>
+                          <td class="text-center">15 Oct 2016</td>
+                          <td class="text-center text-danger"><i class="ion-close-round"></i></td>
+                          <td class="text-center"><span class="label label-outline label-purple">Work in Progress</span></td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>Umega App v1.6</td>
+                          <td class="text-center">06 Apr 2016</td>
+                          <td class="text-center text-success"><i class="ion-checkmark-round"></i></td>
+                          <td class="text-center"><span class="label label-outline label-success">Released</span></td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>Umega App v1.7</td>
+                          <td class="text-center">06 Sep 2016</td>
+                          <td class="text-center text-danger"><i class="ion-close-round"></i></td>
+                          <td class="text-center"><span class="label label-outline label-primary">Coming soon</span></td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td>Sigma App v1.1</td>
+                          <td class="text-center">20 Oct 2016</td>
+                          <td class="text-center text-danger"><i class="ion-close-round"></i></td>
+                          <td class="text-center"><span class="label label-outline label-primary">Coming soon</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="widget">
+                <div class="widget-heading clearfix">
+                  <h3 class="widget-title pull-left">Visitors Analytics</h3>
+                  <ul class="widget-tools pull-right list-inline">
+                    <li><a href="javascript:;" class="widget-collapse"><i class="ion-chevron-up"></i></a></li>
+                    <li><a href="javascript:;" class="widget-reload"><i class="ion-refresh"></i></a></li>
+                    <li><a href="javascript:;" class="widget-remove"><i class="ion-close-round"></i></a></li>
+                  </ul>
+                </div>
+                <div class="widget-body">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <div class="clearfix">
+                        <div id="flot-visitor-legend" class="pull-left"><table style="font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox"><div style="border:1px solid #FFF;padding:1px"><div style="width:4px;height:0;border:5px solid #0667D6;overflow:hidden"></div></div></td><td class="legendLabel">New visitors</td><td class="legendColorBox"><div style="border:1px solid #FFF;padding:1px"><div style="width:4px;height:0;border:5px solid #8E23E0;overflow:hidden"></div></div></td><td class="legendLabel">Returning visitors</td></tr></tbody></table></div>
+                        <div class="pull-right">
+                          <div class="btn-toolbar">
+                            <button id="daterangepicker" type="button" class="btn btn-rounded btn-outline btn-black"><i class="ion-calendar mr-5"></i><span>December 19, 2016 - January 17, 2017</span></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="flot-visitor" style="height: 300px; padding: 0px; position: relative;"><canvas height="300" width="637" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 637px; height: 300px;" class="flot-base"></canvas><div style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);" class="flot-text"><div style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;" class="flot-x-axis flot-x1-axis xAxis x1Axis"><div style="position: absolute; max-width: 79px; top: 287px; font: 400 11px/13px Lato,sans-serif; color: rgb(154, 154, 154); left: 25px; text-align: center;">Jan</div><div style="position: absolute; max-width: 79px; top: 287px; font: 400 11px/13px Lato,sans-serif; color: rgb(154, 154, 154); left: 109px; text-align: center;">Feb</div><div style="position: absolute; max-width: 79px; top: 287px; font: 400 11px/13px Lato,sans-serif; color: rgb(154, 154, 154); left: 192px; text-align: center;">Mar</div><div style="position: absolute; max-width: 79px; top: 287px; font: 400 11px/13px Lato,sans-serif; color: rgb(154, 154, 154); left: 279px; text-align: center;">Apr</div><div style="position: absolute; max-width: 79px; top: 287px; font: 400 11px/13px Lato,sans-serif; color: rgb(154, 154, 154); left: 361px; text-align: center;">May</div><div style="position: absolute; max-width: 79px; top: 287px; font: 400 11px/13px Lato,sans-serif; color: rgb(154, 154, 154); left: 448px; text-align: center;">Jun</div><div style="position: absolute; max-width: 79px; top: 287px; font: 400 11px/13px Lato,sans-serif; color: rgb(154, 154, 154); left: 534px; text-align: center;">Jul</div><div style="position: absolute; max-width: 79px; top: 287px; font: 400 11px/13px Lato,sans-serif; color: rgb(154, 154, 154); left: 617px; text-align: center;">Aug</div></div><div style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;" class="flot-y-axis flot-y1-axis yAxis y1Axis"><div style="position: absolute; top: 266px; font: 400 11px/13px Lato,sans-serif; color: rgb(154, 154, 154); left: 12px; text-align: right;">0</div><div style="position: absolute; top: 213px; font: 400 11px/13px Lato,sans-serif; color: rgb(154, 154, 154); left: 0px; text-align: right;">1 M</div><div style="position: absolute; top: 160px; font: 400 11px/13px Lato,sans-serif; color: rgb(154, 154, 154); left: 0px; text-align: right;">2 M</div><div style="position: absolute; top: 107px; font: 400 11px/13px Lato,sans-serif; color: rgb(154, 154, 154); left: 0px; text-align: right;">3 M</div><div style="position: absolute; top: 54px; font: 400 11px/13px Lato,sans-serif; color: rgb(154, 154, 154); left: 0px; text-align: right;">4 M</div><div style="position: absolute; top: 2px; font: 400 11px/13px Lato,sans-serif; color: rgb(154, 154, 154); left: 0px; text-align: right;">5 M</div></div></div><canvas height="300" width="637" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 637px; height: 300px;" class="flot-overlay"></canvas></div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="media">
+                        <div class="media-body">
+                          <div class="fs-36 fw-300 counter">12,389</div>
+                          <h6 class="m-0 fw-400 text-muted text-uppercase">Your Profile Views</h6>
+                        </div>
+                        <div class="media-right"><i class="ion-ios-bookmarks-outline fs-36"></i></div>
+                      </div>
+                      <div id="flot-profile" style="height: 87px; padding: 0px; position: relative;"><canvas height="87" width="309" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 309px; height: 87px;" class="flot-base"></canvas><canvas height="87" width="309" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 309px; height: 87px;" class="flot-overlay"></canvas></div>
+                      <div class="table-responsive mt-10">
+                        <table class="table mb-0 no-border">
+                          <thead>
+                            <tr>
+                              <th style="width:10%">#</th>
+                              <th style="width:40%">Browser</th>
+                              <th style="width:25%">Sessions</th>
+                              <th style="width:25%">Up/Down</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Chrome</td>
+                              <td>4325</td>
+                              <td class="text-success">+3.26%</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>Firefox</td>
+                              <td>3257</td>
+                              <td class="text-danger">-2.14%</td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>Edge</td>
+                              <td>2314</td>
+                              <td class="text-success">+2.92%</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="widget">
+                <div class="widget-heading">
+                  <h3 class="widget-title">Recent Activities</h3>
+                </div>
+                <div class="widget-body">
+                  <ul class="activity-list activity-sm list-unstyled mb-0">
+                    <li class="activity-purple">
+                      <time datetime="2016-12-10T20:50:48+07:00" class="fs-13 text-muted">9 minutes ago</time>
+                      <p class="mt-10 mb-0">You <span class="label label-success">recommended</span> Karen Ortega</p>
+                    </li>
+                    <li class="activity-danger">
+                      <time datetime="2016-12-10T20:42:40+07:00" class="fs-13 text-muted">15 minutes ago</time>
+                      <p class="mt-10 mb-0">You followed Olivia Williamson</p>
+                    </li>
+                    <li class="activity-warning">
+                      <time datetime="2016-12-10T20:35:35+07:00" class="fs-13 text-muted">22 minutes ago</time>
+                      <p class="mt-10 mb-0">You <span class="text-danger">subscribed</span> to Harold Fuller</p>
+                    </li>
+                    <li class="activity-success">
+                      <time datetime="2016-12-10T20:27:48+07:00" class="fs-13 text-muted">30 minutes ago</time>
+                      <p class="mt-10 mb-0">You updated your profile picture</p>
+                    </li>
+                    <li class="activity-primary">
+                      <time datetime="2016-12-10T20:22:48+07:00" class="fs-13 text-muted">35 minutes ago</time>
+                      <p class="mt-10 mb-0">You deleted homepage.psd</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="widget">
+                <div class="widget-body text-center"><img src="a_data/12.jpg" alt="" class="img-circle" width="100">
+                  <h4 class="mt-20 mb-5 text-black">amal Lawrence</h4>
+                  <p class="fs-12 text-uppercase text-muted">Developer</p>
+                  <p>I am a freelance graphic designer with 5 years experience working in the Graphic Design industry.</p>
+                  <ul class="list-inline mb-0">
+                    <li><a href="#"><i class="ion-social-skype text-info fs-18"></i></a></li>
+                    <li><a href="#"><i class="ion-social-pinterest text-danger fs-18"></i></a></li>
+                    <li><a href="#"><i class="ion-social-whatsapp text-success fs-18"></i></a></li>
+                    <li><a href="#"><i class="ion-social-instagram text-black fs-18"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="widget">
+                <div class="widget-body text-center p-0">
+                  <div class="row row-0 divider">
+                    <div class="col-xs-4">
+                      <h6 class="text-uppercase">Facebook</h6>
+                      <p class="mb-0">43,654</p>
+                      <div class="fs-36 fw-300"><span class="counter">32</span><span>%</span></div>
+                      <div class="progress progress-xs mb-0">
+                        <div aria-valuenow="100" style="width: 100%;" role="progressbar" data-transitiongoal="100" class="progress-bar"></div>
+                      </div>
+                    </div>
+                    <div class="col-xs-4">
+                      <h6 class="text-uppercase">Dribbble</h6>
+                      <p class="mb-0">12,325</p>
+                      <div class="fs-36 fw-300"><span class="counter">15</span><span>%</span></div>
+                      <div class="progress progress-xs mb-0">
+                        <div aria-valuenow="100" style="width: 100%;" role="progressbar" data-transitiongoal="100" class="progress-bar progress-bar-success"></div>
+                      </div>
+                    </div>
+                    <div class="col-xs-4">
+                      <h6 class="text-uppercase">Pinterest</h6>
+                      <p class="mb-0">32,790</p>
+                      <div class="fs-36 fw-300"><span class="counter">28</span><span>%</span></div>
+                      <div class="progress progress-xs mb-0">
+                        <div aria-valuenow="100" style="width: 100%;" role="progressbar" data-transitiongoal="100" class="progress-bar progress-bar-purple"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right Sidebar start-->
+      <aside class="right-sidebar closed">
+        <ul role="tablist" class="nav nav-tabs nav-justified nav-sidebar">
+          <li role="presentation" class="active"><a href="#chat" aria-controls="chat" role="tab" data-toggle="tab"><i class="ion-ios-chatboxes-outline"></i></a></li>
+          <li role="presentation"><a href="#system" aria-controls="system" role="tab" data-toggle="tab"><i class="ion-ios-pie-outline"></i></a></li>
+          <li role="presentation"><a href="#ticket" aria-controls="ticket" role="tab" data-toggle="tab"><i class="ion-ios-list-outline"></i></a></li>
+          <li role="presentation"><a href="#setting" aria-controls="setting" role="tab" data-toggle="tab"><i class="ion-ios-gear-outline"></i></a></li>
+        </ul>
+        <div style="position: relative; overflow: visible;" data-mcs-theme="minimal-dark" class="tab-content nav-sidebar-content mCustomScrollbar _mCS_4 mCS-autoHide"><div tabindex="0" style="max-height: none;" id="mCSB_4" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside"><div id="mCSB_4_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+          <div id="chat" role="tabpanel" class="tab-pane fade in active">
+            <form>
+              <div class="form-group has-feedback">
+                <input aria-describedby="inputChatSearch" placeholder="Chat with..." class="form-control rounded" type="text"><span aria-hidden="true" class="ion-search form-control-feedback"></span><span id="inputChatSearch" class="sr-only">(default)</span>
+              </div>
+            </form>
+            <div class="sidebar-category">Online</div>
+            <ul class="chat-list mb-0 media-list">
+              <li class="media"><a href="javascript:;" class="conversation-toggle">
+                  <div class="media-left avatar"><img src="a_data/20.jpg" alt="" class="media-object img-circle mCS_img_loaded"><span class="status bg-success"></span></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Crystal Wheeler</h5>
+                    <p class="text-muted mb-0">United States</p>
+                  </div>
+                  <div class="media-right"><span class="badge bg-danger">1</span></div></a></li>
+              <li class="media"><a href="javascript:;" class="conversation-toggle">
+                  <div class="media-left avatar"><img src="a_data/01.jpg" alt="" class="media-object img-circle mCS_img_loaded"><span class="status bg-success"></span></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Brian Austin</h5>
+                    <p class="text-muted mb-0">brianaustin@example.com</p>
+                  </div></a></li>
+              <li class="media"><a href="javascript:;" class="conversation-toggle">
+                  <div class="media-left avatar"><img src="a_data/02.jpg" alt="" class="media-object img-circle mCS_img_loaded"><span class="status bg-success"></span></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">David Clark</h5>
+                    <p class="text-muted mb-0">david.clark@example.com</p>
+                  </div></a></li>
+              <li class="media"><a href="javascript:;" class="conversation-toggle">
+                  <div class="media-left avatar"><img src="a_data/12.jpg" alt="" class="media-object img-circle mCS_img_loaded"><span class="status bg-success"></span></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Emma Lawrence</h5>
+                    <p class="text-muted mb-0">(707) 680 1328</p>
+                  </div>
+                  <div class="media-right"><span class="badge bg-danger">3</span></div></a></li>
+              <li class="media"><a href="javascript:;" class="conversation-toggle">
+                  <div class="media-left avatar"><img src="a_data/06.jpg" alt="" class="media-object img-circle mCS_img_loaded"><span class="status bg-success"></span></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Brian Hudson</h5>
+                    <p class="text-muted mb-0">06/03/1989</p>
+                  </div></a></li>
+            </ul>
+            <div class="sidebar-category">Away</div>
+            <ul class="chat-list mb-0 media-list">
+              <li class="media"><a href="javascript:;" class="conversation-toggle">
+                  <div class="media-left avatar"><img src="a_data/16.jpg" alt="" class="media-object img-circle mCS_img_loaded"><span class="status bg-warning"></span></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Evelyn Martinez</h5>
+                    <p class="text-muted mb-0">evelyn_84@example.com</p>
+                  </div>
+                  <div class="media-right"><span class="badge bg-danger">1</span></div></a></li>
+              <li class="media"><a href="javascript:;" class="conversation-toggle">
+                  <div class="media-left avatar"><img src="a_data/09.jpg" alt="" class="media-object img-circle mCS_img_loaded"><span class="status bg-warning"></span></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Nicholas Mitchell</h5>
+                    <p class="text-muted mb-0">(752) 282 4218</p>
+                  </div></a></li>
+              <li class="media"><a href="javascript:;" class="conversation-toggle">
+                  <div class="media-left avatar"><img src="a_data/03.jpg" alt="" class="media-object img-circle mCS_img_loaded"><span class="status bg-warning"></span></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Tyler Gordon</h5>
+                    <p class="text-muted mb-0">tylergordon@example.com</p>
+                  </div></a></li>
+            </ul>
+            <div class="sidebar-category">Busy</div>
+            <ul class="chat-list mb-0 media-list">
+              <li class="media"><a href="javascript:;" class="conversation-toggle">
+                  <div class="media-left avatar"><img src="a_data/15.jpg" alt="" class="media-object img-circle mCS_img_loaded"><span class="status bg-danger"></span></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Stephanie Ford</h5>
+                    <p class="text-muted mb-0">29/06/1992</p>
+                  </div></a></li>
+              <li class="media"><a href="javascript:;" class="conversation-toggle">
+                  <div class="media-left avatar"><img src="a_data/07.jpg" alt="" class="media-object img-circle mCS_img_loaded"><span class="status bg-danger"></span></div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Adam Sandoval</h5>
+                    <p class="text-muted mb-0">adam-86@example.com</p>
+                  </div></a></li>
+            </ul>
+          </div>
+          <div id="system" role="tabpanel" class="tab-pane fade">
+            <div class="sidebar-category">System</div>
+            <ul class="list-group divider mb-0">
+              <li class="list-group-item">
+                <div class="block clearfix"><span class="pull-left">Current user</span><span class="pull-right text-muted">lethemes</span></div>
+              </li>
+              <li class="list-group-item">
+                <div class="block clearfix"><span class="pull-left">Primary domain</span><span class="pull-right text-muted">lethemes.net</span></div>
+              </li>
+              <li class="list-group-item">
+                <div class="block clearfix"><span class="pull-left">Home directory</span><span class="pull-right text-muted">/home/lethemes</span></div>
+              </li>
+              <li class="list-group-item">
+                <div class="block clearfix"><span class="pull-left">Last login</span><span class="pull-right text-muted">10/28/2016</span></div>
+              </li>
+              <li class="list-group-item">
+                <div class="block clearfix"><span class="pull-left">Bandwidth</span><span class="pull-right text-muted">187.38 GB / 2000 GB</span></div>
+              </li>
+            </ul>
+            <div class="sidebar-category">Statistics</div>
+            <ul class="list-group mb-0">
+              <li class="list-group-item">
+                <div class="block clearfix mb-10"><span class="pull-left">Disk Usage</span><span class="pull-right label label-outline label-success">52.49%</span></div>
+                <div class="progress progress-xs mb-10">
+                  <div aria-valuenow="52" style="width: 52%;" role="progressbar" data-transitiongoal="52" class="progress-bar progress-bar-success"></div>
+                </div>
+                <p class="mb-0">250.43 GB / 498.56 GB</p>
+              </li>
+              <li class="list-group-item">
+                <div class="block clearfix mb-10"><span class="pull-left">Subdomains</span><span class="pull-right label label-outline label-danger">85.51%</span></div>
+                <div class="progress progress-xs mb-10">
+                  <div aria-valuenow="85" style="width: 85%;" role="progressbar" data-transitiongoal="85" class="progress-bar progress-bar-danger"></div>
+                </div>
+                <p class="mb-0">25 / 30</p>
+              </li>
+              <li class="list-group-item">
+                <div class="block clearfix mb-10"><span class="pull-left">Databases</span><span class="pull-right label label-outline label-purple">65.23%</span></div>
+                <div class="progress progress-xs mb-10">
+                  <div aria-valuenow="65" style="width: 65%;" role="progressbar" data-transitiongoal="65" class="progress-bar progress-bar-purple"></div>
+                </div>
+                <p class="mb-0">36 / 50</p>
+              </li>
+            </ul>
+          </div>
+          <div id="ticket" role="tabpanel" class="tab-pane fade">
+            <ul class="milestones media-list mb-0">
+              <li class="media">
+                <div class="media-left pr-15"><img src="a_data/16.jpg" alt="" class="media-object mo-md img-circle mCS_img_loaded"></div>
+                <div class="media-body">
+                  <time datetime="2016-12-10T20:50:48+07:00" class="fs-13 text-muted">9 minutes ago</time>
+                  <p class="mt-10 mb-0">Ethan Perkins <span class="text-success">commented</span> on your post</p>
+                </div>
+              </li>
+              <li class="media">
+                <div class="media-left pr-15"><i class="ion-document-text media-object mo-md img-circle bg-primary text-center"></i></div>
+                <div class="media-body">
+                  <time datetime="2016-12-10T20:50:48+07:00" class="fs-13 text-muted">20 minutes ago</time>
+                  <p class="mt-10 mb-0">Prepare for presentation</p>
+                </div>
+              </li>
+              <li class="media">
+                <div class="media-left pr-15"><span class="media-object mo-md img-circle bg-danger text-center fw-700">B</span></div>
+                <div class="media-body">
+                  <time datetime="2016-12-10T20:50:48+07:00" class="fs-13 text-muted">28 minutes ago</time>
+                  <p class="mt-10 mb-0">Brandon Garcia <span class="text-danger">subscribed</span> to Harold Fuller</p>
+                </div>
+              </li>
+              <li class="media">
+                <div class="media-left pr-15"><img src="a_data/05.jpg" alt="" class="media-object mo-md img-circle mCS_img_loaded"></div>
+                <div class="media-body">
+                  <time datetime="2016-12-10T20:50:48+07:00" class="fs-13 text-muted">20 minutes ago</time>
+                  <p class="mt-10 mb-0">Sell 15 products to LE company</p>
+                </div>
+              </li>
+              <li class="media">
+                <div class="media-left pr-15"><i class="ion-stats-bars media-object mo-md img-circle bg-purple text-center"></i></div>
+                <div class="media-body">
+                  <time datetime="2016-12-10T20:50:48+07:00" class="fs-13 text-muted">30 minutes ago</time>
+                  <p class="mt-10 mb-0">3 New products were added!</p>
+                </div>
+              </li>
+              <li class="media">
+                <div class="media-left pr-15"><i class="ion-ios-telephone media-object mo-md img-circle bg-success text-center"></i></div>
+                <div class="media-body">
+                  <time datetime="2016-12-10T20:50:48+07:00" class="fs-13 text-muted">52 minutes ago</time>
+                  <p class="mt-10 mb-0">Contact to the customer service</p>
+                </div>
+              </li>
+              <li class="media">
+                <div class="media-left pr-15"><img src="a_data/09.jpg" alt="" class="media-object mo-md img-circle mCS_img_loaded"></div>
+                <div class="media-body">
+                  <time datetime="2016-12-10T20:50:48+07:00" class="fs-13 text-muted">2 hours ago</time>
+                  <p class="mt-10 mb-0">Paul Clark purchased Sigma web app kit</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="setting" role="tabpanel" class="tab-pane fade">
+            <form class="form-horizontal">
+              <div class="clearfix">
+                <h5 class="pull-left lh-1">Use SSL</h5>
+                <div class="switch pull-right">
+                  <input id="setting-1" checked="checked" type="checkbox">
+                  <label for="setting-1" class="switch-black"></label>
+                </div>
+              </div>
+              <p class="text-muted">Mi mus natoque et eros metus ipsum massa adipiscing massa tincidunt ipsum ad.</p>
+              <div class="clearfix">
+                <h5 class="pull-left lh-1">Use Shared Sessions</h5>
+                <div class="switch pull-right">
+                  <input id="setting-2" type="checkbox">
+                  <label for="setting-2" class="switch-black"></label>
+                </div>
+              </div>
+              <p class="text-muted">Vel etiam scelerisque lacinia ipsum dis massa at turpis phasellus nam vehicula augue.</p>
+              <div class="clearfix">
+                <h5 class="pull-left lh-1">Use SEO URLs</h5>
+                <div class="switch pull-right">
+                  <input id="setting-3" checked="checked" type="checkbox">
+                  <label for="setting-3" class="switch-black"></label>
+                </div>
+              </div>
+              <p class="text-muted">Phasellus ridiculus per tincidunt feugiat cras nam hendrerit consectetur.</p>
+              <div class="clearfix">
+                <h5 class="pull-left lh-1">Maintenance Mode</h5>
+                <div class="switch pull-right">
+                  <input id="setting-4" type="checkbox">
+                  <label for="setting-4" class="switch-black"></label>
+                </div>
+              </div>
+              <p class="text-muted">Metus cursus dolor lorem suscipit in euismod metus erat turpis elementum vulputate pharetra.</p>
+              <div class="clearfix">
+                <h5 class="pull-left lh-1">Allow Forgotten Password</h5>
+                <div class="switch pull-right">
+                  <input id="setting-5" checked="checked" type="checkbox">
+                  <label for="setting-5" class="switch-black"></label>
+                </div>
+              </div>
+              <p class="text-muted">Hendrerit lacus volutpat senectus habitant ligula tortor.</p>
+            </form>
+          </div>
+        </div></div><div style="display: block;" id="mCSB_4_scrollbar_vertical" class="mCSB_scrollTools mCSB_4_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical"><div class="mCSB_draggerContainer"><div id="mCSB_4_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 307px; max-height: 474px; top: 0px;" oncontextmenu="return false;"><div style="line-height: 50px;" class="mCSB_dragger_bar"></div></div><div class="mCSB_draggerRail"></div></div></div></div>
+      </aside>
+      <aside class="conversation closed">
+        <h5 class="text-center m-0 p-20">Emma Lawrence<a href="javascript:;" class="conversation-toggle pull-left"><i class="ion-close-round text-muted"></i></a><a href="javascript:;" class="pull-right"><i class="ion-refresh text-muted"></i></a></h5>
+        <ul style="position: relative; overflow: visible;" data-mcs-theme="minimal-dark" class="chat-content pl-20 pr-20 mCustomScrollbar _mCS_5 mCS-autoHide"><div tabindex="0" style="max-height: none;" id="mCSB_5" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside"><div id="mCSB_5_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+          <li class="chat-item self"><img src="a_data/04.jpg" alt="" class="img-circle chat-avatar mCS_img_loaded">
+            <div class="chat-bubble">
+              <div class="chat-text">Hello.</div>
+            </div>
+            <time datetime="2016-12-10T20:50:48+07:00" class="block fs-12 text-muted"><i class="ion-clock"></i> 12 minutes ago</time>
+          </li>
+          <li class="chat-item other"><img src="a_data/12.jpg" alt="" class="img-circle chat-avatar mCS_img_loaded">
+            <div class="chat-bubble">
+              <div class="chat-text">Hi.</div>
+            </div>
+            <time datetime="2016-12-10T20:50:48+07:00" class="block fs-12 text-muted"><i class="ion-clock"></i> 11 minutes ago</time>
+          </li>
+          <li class="chat-item self"><img src="a_data/04.jpg" alt="" class="img-circle chat-avatar mCS_img_loaded">
+            <div class="chat-bubble">
+              <div class="chat-text">How are you?</div>
+            </div>
+            <time datetime="2016-12-10T20:50:48+07:00" class="block fs-12 text-muted"><i class="ion-clock"></i> 11 minutes ago</time>
+          </li>
+          <li class="chat-item other"><img src="a_data/12.jpg" alt="" class="img-circle chat-avatar mCS_img_loaded">
+            <div class="chat-bubble">
+              <div class="chat-text">I'm good. How are you?</div>
+            </div>
+            <time datetime="2016-12-10T20:50:48+07:00" class="block fs-12 text-muted"><i class="ion-clock"></i> 10 minutes ago</time>
+          </li>
+          <li class="chat-item self"><img src="a_data/04.jpg" alt="" class="img-circle chat-avatar mCS_img_loaded">
+            <div class="chat-bubble">
+              <div class="chat-text">Good. Do you speak English?</div>
+            </div>
+            <time datetime="2016-12-10T20:50:48+07:00" class="block fs-12 text-muted"><i class="ion-clock"></i> 9 minutes ago</time>
+          </li>
+          <li class="chat-item other"><img src="a_data/12.jpg" alt="" class="img-circle chat-avatar mCS_img_loaded">
+            <div class="chat-bubble">
+              <div class="chat-text">A little. Are you American?</div>
+            </div>
+            <time datetime="2016-12-10T20:50:48+07:00" class="block fs-12 text-muted"><i class="ion-clock"></i> 8 minutes ago</time>
+          </li>
+          <li class="chat-item self"><img src="a_data/04.jpg" alt="" class="img-circle chat-avatar mCS_img_loaded">
+            <div class="chat-bubble">
+              <div class="chat-text">Yes.</div>
+            </div>
+            <time datetime="2016-12-10T20:50:48+07:00" class="block fs-12 text-muted"><i class="ion-clock"></i> 8 minutes ago</time>
+          </li>
+          <li class="chat-item other"><img src="a_data/12.jpg" alt="" class="img-circle chat-avatar mCS_img_loaded">
+            <div class="chat-bubble">
+              <div class="chat-text">Where are you from?</div>
+            </div>
+            <time datetime="2016-12-10T20:50:48+07:00" class="block fs-12 text-muted"><i class="ion-clock"></i> 7 minutes ago</time>
+          </li>
+          <li class="chat-item self"><img src="a_data/04.jpg" alt="" class="img-circle chat-avatar mCS_img_loaded">
+            <div class="chat-bubble">
+              <div class="chat-text">I'm from California.</div>
+            </div>
+            <time datetime="2016-12-10T20:50:48+07:00" class="block fs-12 text-muted"><i class="ion-clock"></i> 6 minutes ago</time>
+          </li>
+          <li class="chat-item other"><img src="a_data/12.jpg" alt="" class="img-circle chat-avatar mCS_img_loaded">
+            <div class="chat-bubble">
+              <div class="chat-text">Nice to meet you.</div>
+            </div>
+            <time datetime="2016-12-10T20:50:48+07:00" class="block fs-12 text-muted"><i class="ion-clock"></i> 15 seconds ago</time>
+          </li>
+          <li class="chat-item self"><img src="a_data/04.jpg" alt="" class="img-circle chat-avatar mCS_img_loaded">
+            <div class="chat-bubble">
+              <div class="chat-text">Nice to meet you too.</div>
+            </div>
+            <time datetime="2016-12-10T20:50:48+07:00" class="block fs-12 text-muted"><i class="ion-clock"></i> Just now</time>
+          </li>
+        </div></div><div style="display: block;" id="mCSB_5_scrollbar_vertical" class="mCSB_scrollTools mCSB_5_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical"><div class="mCSB_draggerContainer"><div id="mCSB_5_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 164px; max-height: 405px; top: 0px;" oncontextmenu="return false;"><div style="line-height: 50px;" class="mCSB_dragger_bar"></div></div><div class="mCSB_draggerRail"></div></div></div></ul>
+        <form class="pl-20 pr-20">
+          <div class="form-group has-feedback mb-0">
+            <input aria-describedby="inputSendMessage" placeholder="Sent a message" class="form-control rounded" type="text"><span aria-hidden="true" class="ion-edit form-control-feedback"></span><span id="inputSendMessage" class="sr-only">(default)</span>
+          </div>
+        </form>
+      </aside>
+      <!-- Right Sidebar end-->
+    </div>
+    <!-- jQuery-->
+    <script type="text/javascript" src="a_data/jquery_005.js"></script>
+    <!-- Bootstrap JavaScript-->
+    <script type="text/javascript" src="a_data/bootstrap.js"></script>
+    <!-- Malihu Scrollbar-->
+    <script type="text/javascript" src="a_data/jquery_002.js"></script>
+    <!-- Animo.js-->
+    <script type="text/javascript" src="a_data/animo.js"></script>
+    <!-- Bootstrap Progressbar-->
+    <script type="text/javascript" src="a_data/bootstrap-progressbar.js"></script>
+    <!-- jQuery Easy Pie Chart-->
+    <script type="text/javascript" src="a_data/jquery_003.js"></script>
+    <!-- MomentJS-->
+    <script type="text/javascript" src="a_data/moment.js"></script>
+    <!-- jQuery BlockUI-->
+    <script type="text/javascript" src="a_data/jquery_007.js"></script>
+    <!-- jQuery Counter Up-->
+    <script type="text/javascript" src="a_data/waypoints.js"></script>
+    <script type="text/javascript" src="a_data/jquery_008.js"></script>
+    <!-- Flot Charts-->
+    <script type="text/javascript" src="a_data/jquery.js"></script>
+    <script type="text/javascript" src="a_data/jquery_004.js"></script>
+    <script type="text/javascript" src="a_data/curvedLines.js"></script>
+    <script type="text/javascript" src="a_data/jquery_006.js"></script>
+    <!-- Bootstrap Date Range Picker-->
+    <script type="text/javascript" src="a_data/daterangepicker.js"></script>
+    <!-- Core JS-->
+    <script type="text/javascript" src="a_data/app.js"></script>
+    <script type="text/javascript" src="a_data/demo.js"></script>
+    <script type="text/javascript" src="a_data/index.js"></script>
+  
+<div class="daterangepicker dropdown-menu opensleft"><div class="calendar left"><div class="daterangepicker_input"><input class="input-mini" name="daterangepicker_start" type="text"><i class="fa fa-calendar glyphicon glyphicon-calendar"></i><div style="display: none;" class="calendar-time"><div></div><i class="fa fa-clock-o glyphicon glyphicon-time"></i></div></div><div class="calendar-table"></div></div><div class="calendar right"><div class="daterangepicker_input"><input class="input-mini" name="daterangepicker_end" type="text"><i class="fa fa-calendar glyphicon glyphicon-calendar"></i><div style="display: none;" class="calendar-time"><div></div><i class="fa fa-clock-o glyphicon glyphicon-time"></i></div></div><div class="calendar-table"></div></div><div class="ranges"><ul><li>Today</li><li>Yesterday</li><li>Last 7 Days</li><li>Last 30 Days</li><li>This Month</li><li>Last Month</li><li>Custom Range</li></ul><div class="range_inputs"><button class="applyBtn btn btn-sm btn-black mr-5" disabled="disabled" type="button">Apply</button> <button class="cancelBtn btn btn-sm btn-default" type="button">Cancel</button></div></div></div><div style="position: absolute; top: 183px; left: 1159px; display: none;" class="flotTip">Feedbacks: 907</div></body></html>
